@@ -6,15 +6,15 @@ import pkg_resources
 
 
 def check_protobuf_version():
-    """Check if protobuf versions match between runtime and tools"""
+    """Check if protobuf versions match between runtime and gencode"""
     runtime_version = protobuf_version
-    tools_protobuf_version = pkg_resources.get_distribution("protobuf").version
+    gencode_protobuf_version = pkg_resources.get_distribution("protobuf").version
 
-    if runtime_version != tools_protobuf_version:
+    if runtime_version != gencode_protobuf_version:
         print(f"Protobuf runtime version: {runtime_version}")
-        print(f"Protobuf tools version: {tools_protobuf_version}")
+        print(f"Protobuf gencode version: {gencode_protobuf_version}")
         print(f"WARNING: Version mismatch detected!")
-        print(f"To fix, run: pdm add -d protobuf=={runtime_version}")
+        print(f"To fix, run: pdm add -d protobuf>={runtime_version}")
         if not input("Continue anyway? [y/N] ").lower().startswith("y"):
             sys.exit(1)
 
