@@ -2,11 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.3] - 2024-10-23
+
+### Features
+
+- Include generated grpc code in git
+
+### Miscellaneous Tasks
+
+- Add vscode settings
+- Move and change build.py
+- Update pyproject.toml build settings
+
 ## [0.1.2] - 2024-10-23
 
 ### Bug Fixes
 
 - Include generated gRPC files in build
+
+### Miscellaneous Tasks
+
+- Update changelog
 
 ## [0.1.1] - 2024-10-23
 
