@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2024-10-23
+
+### Bug Fixes
+
+- Include generated gRPC files in build
+
 ## [0.1.1] - 2024-10-23
 
 ### Features
@@ -13,6 +19,7 @@ All notable changes to this project will be documented in this file.
 
 - Update changelog
 - Update release.yml
+- Update changelog
 - Update changelog
 - Update changelog
 
