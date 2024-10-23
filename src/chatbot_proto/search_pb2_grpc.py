@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import search_pb2 as search__pb2
+from . import search_pb2 as search__pb2
 
 GRPC_GENERATED_VERSION = '1.67.0'
 GRPC_VERSION = grpc.__version__
