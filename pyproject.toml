@@ -1,6 +1,6 @@
 [project]
 name = "chatbot-proto"
-version = "0.1.0"
+version = "0.1.1"
 description = "Shared protobuf definitions for chatbot gRPC services"
 authors = [
     {name = "antonkanerva", email = "anton@kanerva.dev"},
