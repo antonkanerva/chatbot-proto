@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.4] - 2024-10-23
+
+### Bug Fixes
+
+- Replace local import with package import
+
 ## [0.1.3] - 2024-10-23
 
 ### Features
@@ -13,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Add vscode settings
 - Move and change build.py
 - Update pyproject.toml build settings
+- Update changelog
 
 ## [0.1.2] - 2024-10-23
 
