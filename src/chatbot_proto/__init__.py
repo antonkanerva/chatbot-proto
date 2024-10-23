@@ -1,5 +1,5 @@
-from chatbot_proto.protos.search_pb2 import SearchRequest, SearchResponse, SearchHit
-from chatbot_proto.protos.search_pb2_grpc import (
+from chatbot_proto.search_pb2 import SearchRequest, SearchResponse, SearchHit
+from chatbot_proto.search_pb2_grpc import (
     ChatbotSearchServiceStub,
     ChatbotSearchServiceServicer,
 )

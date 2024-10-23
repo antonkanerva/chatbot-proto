@@ -27,7 +27,7 @@ dev = [
 ]
 
 [tool.pdm.scripts]
-generate = "python -m grpc_tools.protoc -I./src/chatbot_proto/protos --python_out=./src/chatbot_proto/protos --grpc_python_out=./src/chatbot_proto/protos ./src/chatbot_proto/protos/search.proto"
+generate = "python -m grpc_tools.protoc -I./src/chatbot_proto/protos --python_out=./src/chatbot_proto --grpc_python_out=./src/chatbot_proto ./src/chatbot_proto/protos/search.proto"
 format = "ruff format ."
 lint = "ruff check ."
 fix = "ruff check --fix ."
