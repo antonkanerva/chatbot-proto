@@ -1,32 +1,23 @@
 [project]
 name = "chatbot-proto"
-version = "0.1.2"
+version = "0.1.3"
 description = "Shared protobuf definitions for chatbot gRPC services"
 authors = [
     {name = "antonkanerva", email = "anton@kanerva.dev"},
 ]
 dependencies = [
-    "grpcio==1.67.0",
+    "grpcio>=1.67.0",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
 
 [build-system]
-requires = [
-    "pdm-backend",
-    "grpcio-tools>=1.67.0",
-]
+requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [tool.pdm]
 package-dir = "src"
-
-[tool.pdm.build]
-includes = ["src/chatbot_proto"]
-run-setuptools = true
-setup-script = "build.py"
-is-purelib = true
 
 [tool.pdm.dev-dependencies]
 dev = [
@@ -36,7 +27,7 @@ dev = [
 ]
 
 [tool.pdm.scripts]
-generate = "python -m grpc_tools.protoc -I./src/chatbot_proto/protos --python_out=./src/chatbot_proto --grpc_python_out=./src/chatbot_proto ./src/chatbot_proto/protos/search.proto"
+generate = { call = "scripts.build:generate_protos" }
 format = "ruff format ."
 lint = "ruff check ."
 fix = "ruff check --fix ."
