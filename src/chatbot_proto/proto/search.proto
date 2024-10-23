@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+service ChatbotSearchService {
+  rpc Search (SearchRequest) returns (SearchResponse);
+}
+
+message SearchRequest {
+  string query = 1;
+  int32 top_k = 2;
+}
+
+message SearchResponse {
+  repeated SearchHit result = 1;
+}
+
+message SearchHit {
+  string content = 1;
+  float score = 2;  // relevance score
+  string id = 3;    // document id
+}
