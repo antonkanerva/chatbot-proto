@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.5] - 2024-10-23
+
+### Features
+
+- Compare protobuf gencode and runtime versions when generating the grpc code
+
 ## [0.1.4] - 2024-10-23
 
 ### Bug Fixes
 
 - Replace local import with package import
+
+### Miscellaneous Tasks
+
+- Update changelog
 
 ## [0.1.3] - 2024-10-23
 
