@@ -26,5 +26,3 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-*_pb2.py
-*_pb2_grpc.py
