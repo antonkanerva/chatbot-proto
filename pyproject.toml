@@ -1,6 +1,6 @@
 [project]
 name = "chatbot-proto"
-version = "0.1.1"
+version = "0.1.2"
 description = "Shared protobuf definitions for chatbot gRPC services"
 authors = [
     {name = "antonkanerva", email = "anton@kanerva.dev"},
@@ -18,6 +18,15 @@ requires = [
     "grpcio-tools>=1.67.0",
 ]
 build-backend = "pdm.backend"
+
+[tool.pdm]
+package-dir = "src"
+
+[tool.pdm.build]
+includes = ["src/chatbot_proto"]
+run-setuptools = true
+setup-script = "build.py"
+is-purelib = true
 
 [tool.pdm.dev-dependencies]
 dev = [
