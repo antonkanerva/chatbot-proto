@@ -2,11 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.5] - 2024-10-23
+## [0.1.6] - 2024-10-25
+
+### Bug Fixes
+
+- Move protobuf to main dependencies
 
 ### Miscellaneous Tasks
 
 - Update build.check_protobuf_version strings
+- Update changelog
 
 ## [0.1.5] - 2024-10-23
 
