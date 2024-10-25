@@ -1,12 +1,13 @@
 [project]
 name = "chatbot-proto"
-version = "0.1.5"
+version = "0.1.6"
 description = "Shared protobuf definitions for chatbot gRPC services"
 authors = [
     {name = "antonkanerva", email = "anton@kanerva.dev"},
 ]
 dependencies = [
     "grpcio>=1.67.0",
+    "protobuf>=5.28.3",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
@@ -23,8 +24,7 @@ package-dir = "src"
 dev = [
     "grpcio-tools>=1.67.0",
     "pre-commit>=4.0.1",
-    "protobuf>=5.28.3",
-    "ruff>=0.7.0",
+    "ruff>=0.7.1",
 ]
 
 [tool.pdm.scripts]
